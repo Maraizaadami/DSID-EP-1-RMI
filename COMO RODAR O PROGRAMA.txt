@@ -1,6 +1,0 @@
-1- Abra o cmd na pasta dos arquivos.
-2- rode o comando "start rmiregistry"
-3- rode o comando "java Server" e de um nome ao Server
-4- rode o comando "java Client" e digite o nome que vc deu pro servidor.
-
-5- Se for rodar o servidor de novo, feche a janela do rmi antes de rodar os .java e abra o rmi novamente.
