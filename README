@@ -1,0 +1,45 @@
+/*************************************************************************/
+/** ACH2147 - Desenvolvimento de Sistemas de Informação Distribuídos 	**/
+/** EACH-USP - Primeiro Semestre de 2020                            	**/
+/**                                                     		**/
+/** <04> - <Norton Trevisan Roman>                                	**/
+/**                                                                 	**/
+/** Segundo  Exercicio-Programa                                    	**/
+/**                                                                	**/
+/** Grupo 							   	**/
+/** Guilherme Neves 							**/
+/** Hugo Giudice Bentivegna 						**/
+/** Kleber Tadashi Fujimura 						**/
+/** Maraiza Adami Pereira 						**/
+/** Vinicius Mariano Bispo 		                                **/
+/**                                                                     **/
+/*************************************************************************/
+
+
+
+Para o atual exercício a aplicação foi composta por dois programas : servidor
+e cliente. Onde o servidor cria objetos remotos e faz referências a esses objetos
+disponíveis, validando para os clientes invocarem seus métodos sobre os objetos.O
+cliente executa referências remotas aos objetos remotos no servidor e invoca
+métodos nesses objetos remotos.O modelo de RMI fornece uma aplicação de
+objetos distribuídos sendo um mecanismo de comunicação entre servidor e cliente
+para transmitirem informações entre si.
+
+○ Interfaces e Classes
+Todas as interfaces e classes para o sistema de RMI são definidos no pacote
+java.rmi. A classe de objeto remoto implementa a interface remota, enquanto as
+outras classes estendem RemoteObject e suas subclasses Remote Server,
+Activatable e UnicastRemoteObject. Enquanto a classe RemoteObject fornece
+implementações dos métodos toString, equals e hashCode na classe
+java.lang.Object. As classes UnicastRemoteObject e Activatable cria objetos
+remotos e os exporta, ou seja, essas classes fazem os objetos remotos usados por
+clientes remotos.
+
+○ Aplicação
+Rodamos na seguinte ordem:
+1- Abra o cmd na pasta dos arquivos.
+2- rode o comando "start rmiregistry"
+3- rode o comando "java Server" e de um nome ao Server
+4- rode o comando "java Client" e digite o nome que você deu pro servidor.
+5- Se for rodar o servidor de novo, feche a janela do rmi antes de rodar os
+.java e abra o rmi novamente.
